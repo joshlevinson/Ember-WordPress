@@ -1,0 +1,9 @@
+<h2 id="title">Welcome to Ember.js</h2>
+{{outlet}}
+{{#each model as |post|}}
+  <h6>
+      {{#link-to "post" post.id}}
+        {{post.title}}
+      {{/link-to}}
+  </h6>
+{{/each}}
